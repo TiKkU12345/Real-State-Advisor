@@ -1,4 +1,4 @@
-"""Real Estate Investment Advisor: Streamlit app."""
+"""🗒️Real Estate Investment Advisor: Streamlit app."""
 import json
 import sys
 from pathlib import Path
