@@ -1,0 +1,31 @@
+2026/10/26 06:49:20 INFO mlflow.store.db.utils: Creating initial MLflow database tables...
+2026/10/26 06:49:20 INFO mlflow.store.db.utils: Updating database tables
+split 175000 37500 37500
+2026/10/26 06:49:23 INFO mlflow.tracking.fluent: Experiment with name 'RE_Good_Investment_Classification' does not exist. Creating a new experiment.
+CLF LogisticRegression: val_f1=0.7822 test_acc=0.8301 (2s)
+CLF RandomForest: val_f1=0.8373 test_acc=0.8737 (11s)
+CLF XGBoost_d6: val_f1=0.8701 test_acc=0.8956 (11s)
+CLF XGBoost_d4_slow: val_f1=0.8647 test_acc=0.8899 (12s)
+CLF XGBoost_LEAKY_with_price: val_f1=0.9919 test_acc=0.9932 (11s)
+2026/10/26 06:50:19 INFO mlflow.tracking.fluent: Experiment with name 'RE_Future_Price_Regression' does not exist. Creating a new experiment.
+REG baseline fixed 8%: {'rmse': 23.112, 'mae': 16.384, 'r2': 0.988, 'mape_pct': 4.425}
+REG LinearRegression: val_rmse=11.234 test_r2=0.9971 (2s)
+REG RandomForest: val_rmse=14.141 test_r2=0.9954 (19s)
+REG XGBoost_d6: val_rmse=1.563 test_r2=0.9999 (13s)
+REG XGBoost_d8: val_rmse=1.655 test_r2=0.9999 (21s)
+BEST clf: XGBoost_d6 | BEST reg: XGBoost_d6
+2026/10/26 06:51:20 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+/usr/local/lib/python3.12/dist-packages/mlflow/types/utils.py:440: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/mlflow/types/utils.py:440: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+Successfully registered model 'good_investment_classifier'.
+Created version '1' of model 'good_investment_classifier'.
+registered good_investment_classifier v1 (XGBoost_d6)
+2026/10/26 06:51:24 WARNING mlflow.sklearn: Saving scikit-learn models in the pickle or cloudpickle format requires exercising caution because these formats rely on Python's object serialization mechanism, which can execute arbitrary code during deserialization. The recommended safe alternative is the 'skops' format. For more information, see: https://scikit-learn.org/stable/model_persistence.html
+/usr/local/lib/python3.12/dist-packages/mlflow/types/utils.py:440: UserWarning: Hint: Inferred schema contains integer column(s). Integer columns in Python cannot represent missing values. If your input data contains missing values at inference time, it will be encoded as floats and will cause a schema enforcement error. The best way to avoid this problem is to infer the model schema based on a realistic data sample (training dataset) that includes missing values. Alternatively, you can declare integer columns as doubles (float64) whenever these columns may have missing values. See `Handling Integers With Missing Values <https://www.mlflow.org/docs/latest/models.html#handling-integers-with-missing-values>`_ for more details.
+  warnings.warn(
+Successfully registered model 'future_price_regressor'.
+Created version '1' of model 'future_price_regressor'.
+registered future_price_regressor v1 (XGBoost_d6)
+TRAINING DONE in 128 s

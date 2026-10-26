@@ -1,0 +1,15 @@
+{
+  "rows_raw": 250000,
+  "duplicates_removed": 0,
+  "missing_values_before": 0,
+  "missing_values_after": 0,
+  "floor_greater_than_total_fixed": 116304,
+  "Outlier_PPS_count": 19723,
+  "Outlier_Size_count": 0,
+  "Outlier_Price_count": 0,
+  "rows_clean": 250000,
+  "good_investment_rate": 0.3953,
+  "growth_rate_pct_mean": 7.903,
+  "growth_rate_pct_min": 4.709,
+  "growth_rate_pct_max": 10.966
+}

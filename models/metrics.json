@@ -1,0 +1,509 @@
+{
+  "split_sizes": {
+    "train": 175000,
+    "val": 37500,
+    "test": 37500
+  },
+  "classification": {
+    "best": "XGBoost_d6",
+    "models": {
+      "LogisticRegression": {
+        "val": {
+          "accuracy": 0.8317333333333333,
+          "precision": 0.8009471972856436,
+          "recall": 0.7643170320404722,
+          "f1": 0.7822035068341847,
+          "roc_auc": 0.9149915586286909
+        },
+        "test": {
+          "accuracy": 0.8301333333333333,
+          "precision": 0.797355278891468,
+          "recall": 0.7646543001686341,
+          "f1": 0.7806624888093107,
+          "roc_auc": 0.9139100159709659
+        },
+        "confusion_matrix_test": [
+          [
+            19794,
+            2881
+          ],
+          [
+            3489,
+            11336
+          ]
+        ],
+        "importance": {
+          "City": 0.594127333171373,
+          "State": 0.16860139836315155,
+          "Availability_Status": 0.04897004701381427,
+          "BHK": 0.022151885667879317,
+          "Size_in_SqFt": 0.019158451900914943,
+          "Public_Transport_Accessibility": 0.01873860253937652,
+          "Transport_Score": 0.015622768258169877,
+          "Infrastructure_Score": 0.015164760161377971,
+          "Property_Type": 0.010969147273742617,
+          "Amenity_Count": 0.009898179198955581,
+          "Owner_Type": 0.006417801380483536,
+          "Facing": 0.006417801380483388,
+          "Furnished_Status": 0.0064178013804832585,
+          "Size_per_BHK": 0.006364321597814007,
+          "Has_Pool": 0.005958297675281624,
+          "Has_Gym": 0.005861303619000835,
+          "Has_Clubhouse": 0.005643539783211353,
+          "Has_Playground": 0.005607844547550614,
+          "Has_Garden": 0.005499552768137057,
+          "School_Density_Score": 0.004527403575207579,
+          "Nearby_Schools": 0.0045274035752075744,
+          "Nearby_Hospitals": 0.004460702249344082,
+          "Hospital_Score": 0.004460702249343424,
+          "Age_of_Property": 0.003490170589050388,
+          "Floor_Ratio": 0.0003209796116485946,
+          "Parking_Flag": 0.000278878887835254,
+          "Total_Floors": 0.0001223080608173634,
+          "Floor_No": 0.00011353235318440469,
+          "Security_Flag": 0.00010708116715997628
+        },
+        "leaky": false,
+        "fit_seconds": 2.4
+      },
+      "RandomForest": {
+        "val": {
+          "accuracy": 0.8743466666666667,
+          "precision": 0.8576278378951835,
+          "recall": 0.8179426644182125,
+          "f1": 0.8373152879436542,
+          "roc_auc": 0.9531764269286473
+        },
+        "test": {
+          "accuracy": 0.8737066666666666,
+          "precision": 0.8522449549612457,
+          "recall": 0.8232715008431704,
+          "f1": 0.8375077197557126,
+          "roc_auc": 0.95232113577924
+        },
+        "confusion_matrix_test": [
+          [
+            20559,
+            2116
+          ],
+          [
+            2620,
+            12205
+          ]
+        ],
+        "importance": {
+          "Infrastructure_Score": 0.1965789248200349,
+          "BHK": 0.13024756419651062,
+          "Availability_Status": 0.11281209901917585,
+          "Amenity_Count": 0.10827771835842032,
+          "Public_Transport_Accessibility": 0.08420129578058524,
+          "City": 0.053524938909349326,
+          "Size_in_SqFt": 0.04276853965776367,
+          "Transport_Score": 0.04225111530217081,
+          "Size_per_BHK": 0.04045919477359344,
+          "State": 0.02069398582343218,
+          "Nearby_Schools": 0.016778123375768447,
+          "Has_Gym": 0.01608099673493209,
+          "School_Density_Score": 0.015775447668948856,
+          "Nearby_Hospitals": 0.015556595736236334,
+          "Hospital_Score": 0.015365152508369333,
+          "Has_Playground": 0.013016903544855287,
+          "Has_Clubhouse": 0.012458633107906156,
+          "Has_Garden": 0.012260627334826696,
+          "Has_Pool": 0.011690320622908926,
+          "Age_of_Property": 0.007443642155619678,
+          "Floor_Ratio": 0.005870919436499241,
+          "Property_Type": 0.005079453154254357,
+          "Total_Floors": 0.004784977835943596,
+          "Floor_No": 0.004740845702898473,
+          "Facing": 0.0032134381929478824,
+          "Owner_Type": 0.0028818563028875526,
+          "Furnished_Status": 0.0028760028321018227,
+          "Security_Flag": 0.0011621794795423739,
+          "Parking_Flag": 0.001148507631516432
+        },
+        "leaky": false,
+        "fit_seconds": 5.1
+      },
+      "XGBoost_d6": {
+        "val": {
+          "accuracy": 0.89712,
+          "precision": 0.8707322020147387,
+          "recall": 0.8687352445193929,
+          "f1": 0.8697325769854133,
+          "roc_auc": 0.9704388613203284
+        },
+        "test": {
+          "accuracy": 0.896,
+          "precision": 0.8669801813906617,
+          "recall": 0.8704890387858347,
+          "f1": 0.8687310669808146,
+          "roc_auc": 0.9699830577613503
+        },
+        "confusion_matrix_test": [
+          [
+            20695,
+            1980
+          ],
+          [
+            1920,
+            12905
+          ]
+        ],
+        "importance": {
+          "City": 0.5231434871846352,
+          "State": 0.13246316365959504,
+          "BHK": 0.08179510114476138,
+          "Amenity_Count": 0.06982476560463252,
+          "Infrastructure_Score": 0.060613030293641124,
+          "Availability_Status": 0.03882567418456178,
+          "Property_Type": 0.01654327290504386,
+          "Size_in_SqFt": 0.016526295474053418,
+          "Transport_Score": 0.01502307169658072,
+          "Facing": 0.006047503411170546,
+          "Public_Transport_Accessibility": 0.0055771743813949155,
+          "Furnished_Status": 0.004565015068252606,
+          "Owner_Type": 0.004332860064505803,
+          "Age_of_Property": 0.003555690934280875,
+          "Size_per_BHK": 0.0024440261920445545,
+          "Has_Pool": 0.001806522872549924,
+          "Nearby_Schools": 0.0017926246272809976,
+          "Floor_Ratio": 0.0016340598339716261,
+          "Nearby_Hospitals": 0.001627389584282187,
+          "Has_Gym": 0.0015902256170612545,
+          "Total_Floors": 0.0015400432717049763,
+          "Floor_No": 0.0015295953442588956,
+          "Parking_Flag": 0.0015063710661676404,
+          "Has_Playground": 0.0015011259730605376,
+          "Has_Clubhouse": 0.0014157366023350726,
+          "Has_Garden": 0.0014127116661616188,
+          "Security_Flag": 0.0013634613420108774,
+          "School_Density_Score": 0.0,
+          "Hospital_Score": 0.0
+        },
+        "leaky": false,
+        "fit_seconds": 5.7
+      },
+      "XGBoost_d4_slow": {
+        "val": {
+          "accuracy": 0.8936266666666667,
+          "precision": 0.8695266675760469,
+          "recall": 0.8599662731871838,
+          "f1": 0.8647200461220199,
+          "roc_auc": 0.9673807132458617
+        },
+        "test": {
+          "accuracy": 0.8897333333333334,
+          "precision": 0.8625695292361959,
+          "recall": 0.8577403035413154,
+          "f1": 0.8601481381269659,
+          "roc_auc": 0.9664815779834935
+        },
+        "confusion_matrix_test": [
+          [
+            20649,
+            2026
+          ],
+          [
+            2109,
+            12716
+          ]
+        ],
+        "importance": {
+          "City": 0.45692181441779234,
+          "State": 0.13424273955436772,
+          "Infrastructure_Score": 0.11923919754860235,
+          "BHK": 0.07400702769980909,
+          "Amenity_Count": 0.07154053531665619,
+          "Size_in_SqFt": 0.035188455538133025,
+          "Availability_Status": 0.030379942035351912,
+          "Property_Type": 0.025098487673350732,
+          "Transport_Score": 0.01935579463682903,
+          "Age_of_Property": 0.006964946245547291,
+          "Public_Transport_Accessibility": 0.006028439453081378,
+          "Owner_Type": 0.002703739011930103,
+          "Furnished_Status": 0.0026492232877002673,
+          "Facing": 0.0024597074070807057,
+          "Has_Pool": 0.0019098088597082734,
+          "Size_per_BHK": 0.0016065676647991542,
+          "Has_Clubhouse": 0.0011929692837301961,
+          "Floor_Ratio": 0.0009863864510738134,
+          "Has_Gym": 0.0009606824715886293,
+          "Nearby_Hospitals": 0.0009294049920917479,
+          "Security_Flag": 0.0009125898463989259,
+          "Nearby_Schools": 0.0008813972336726295,
+          "Has_Garden": 0.000836083966115754,
+          "Has_Playground": 0.0008133438043429475,
+          "Total_Floors": 0.0008125410042744233,
+          "Floor_No": 0.0008057252945569275,
+          "Parking_Flag": 0.0005724493014144544,
+          "School_Density_Score": 0.0,
+          "Hospital_Score": 0.0
+        },
+        "leaky": false,
+        "fit_seconds": 4.5
+      },
+      "XGBoost_LEAKY_with_price": {
+        "val": {
+          "accuracy": 0.9936,
+          "precision": 0.9923040572470128,
+          "recall": 0.9915008431703204,
+          "f1": 0.991902287603752,
+          "roc_auc": 0.9997140918209689
+        },
+        "test": {
+          "accuracy": 0.9932266666666667,
+          "precision": 0.9907051929682764,
+          "recall": 0.9921753794266441,
+          "f1": 0.9914397411701267,
+          "roc_auc": 0.9996912170842854
+        },
+        "confusion_matrix_test": [
+          [
+            22537,
+            138
+          ],
+          [
+            116,
+            14709
+          ]
+        ],
+        "importance": {
+          "City": 0.5921347880995432,
+          "State": 0.16543155600679244,
+          "BHK": 0.04946042251917162,
+          "Infrastructure_Score": 0.04455516511819494,
+          "Amenity_Count": 0.044544816261689005,
+          "Availability_Status": 0.02849080988014114,
+          "Price_per_SqFt_Rs": 0.025820311300641514,
+          "Property_Type": 0.0190842039766651,
+          "Transport_Score": 0.01318433701779273,
+          "Age_of_Property": 0.005385447788745808,
+          "Public_Transport_Accessibility": 0.005341453041402029,
+          "Facing": 0.001419389995651216,
+          "Owner_Type": 0.0009834144420309617,
+          "Furnished_Status": 0.0005878238985570579,
+          "Nearby_Schools": 0.00045981756081842724,
+          "Nearby_Hospitals": 0.000401072031691793,
+          "Price_in_Lakhs": 0.00036323009607481876,
+          "Has_Pool": 0.0003121894277541063,
+          "Size_per_BHK": 0.0003023592597174143,
+          "Size_in_SqFt": 0.0002632515985069282,
+          "Floor_Ratio": 0.00024221246845808716,
+          "Floor_No": 0.00023167219605818297,
+          "Total_Floors": 0.0002255941666241473,
+          "Has_Gym": 0.00021381936793715223,
+          "Has_Playground": 0.00016931035590637958,
+          "Security_Flag": 0.00016794775821266073,
+          "Has_Garden": 0.00013281559295289747,
+          "Has_Clubhouse": 9.076877226823881e-05,
+          "School_Density_Score": 0.0,
+          "Hospital_Score": 0.0,
+          "Parking_Flag": 0.0
+        },
+        "leaky": true,
+        "fit_seconds": 3.1
+      }
+    }
+  },
+  "regression": {
+    "best": "XGBoost_d6",
+    "models": {
+      "LinearRegression": {
+        "val": {
+          "rmse": 11.23403626762767,
+          "mae": 7.87899434570302,
+          "r2": 0.9970929136152477,
+          "mape_pct": 6.001845026994039
+        },
+        "test": {
+          "rmse": 11.185729441700358,
+          "mae": 7.849684549823871,
+          "r2": 0.997100627745757,
+          "mape_pct": 5.804623234592592
+        },
+        "importance": {
+          "City": 0.553984784616913,
+          "Price_in_Lakhs": 0.2516786758391488,
+          "State": 0.15655724915031882,
+          "Availability_Status": 0.010553806330858041,
+          "Property_Type": 0.008384542306044681,
+          "Transport_Score": 0.0054024574077508455,
+          "Public_Transport_Accessibility": 0.004496253630865786,
+          "Infrastructure_Score": 0.0037583605133728864,
+          "Age_of_Property": 0.0035225492997886824,
+          "Facing": 0.0002579361618839736,
+          "Nearby_Hospitals": 0.00015197631435065226,
+          "Hospital_Score": 0.00015197631435056588,
+          "Nearby_Schools": 0.0001414426261498881,
+          "School_Density_Score": 0.00014144262614983088,
+          "BHK": 0.00013879326724775223,
+          "Size_per_BHK": 0.00013599908985481606,
+          "Owner_Type": 8.129141797268628e-05,
+          "Furnished_Status": 7.508603552151323e-05,
+          "Has_Garden": 6.42672335243984e-05,
+          "Has_Gym": 5.996529834875382e-05,
+          "Floor_Ratio": 5.6495785402608835e-05,
+          "Size_in_SqFt": 4.6328748257874336e-05,
+          "Security_Flag": 4.323194056341881e-05,
+          "Has_Clubhouse": 2.4542308861684533e-05,
+          "Floor_No": 2.1902520524356516e-05,
+          "Has_Pool": 1.9834157658676963e-05,
+          "Has_Playground": 1.9128727669561573e-05,
+          "Total_Floors": 1.3515899181835032e-05,
+          "Parking_Flag": 9.682640589440142e-06,
+          "Amenity_Count": 6.481790874102387e-06
+        },
+        "fit_seconds": 2.3
+      },
+      "RandomForest": {
+        "val": {
+          "rmse": 14.141304063067007,
+          "mae": 10.469706067732247,
+          "r2": 0.995393562162604,
+          "mape_pct": 5.004664799785502
+        },
+        "test": {
+          "rmse": 14.163529351464527,
+          "mae": 10.479534189014375,
+          "r2": 0.9953514411718578,
+          "mape_pct": 4.8423374744770475
+        },
+        "importance": {
+          "Price_in_Lakhs": 0.9887972519309839,
+          "City": 0.004304432287844872,
+          "State": 0.0013071312628129027,
+          "Public_Transport_Accessibility": 0.0008533422668596872,
+          "Transport_Score": 0.0007222517538984662,
+          "Infrastructure_Score": 0.00046405723038959063,
+          "Availability_Status": 0.0003939962875640258,
+          "Size_in_SqFt": 0.0003743744961245744,
+          "Size_per_BHK": 0.00036713592944908073,
+          "Age_of_Property": 0.0003413238165839643,
+          "Floor_Ratio": 0.00029603050961505276,
+          "Total_Floors": 0.00023574126804020142,
+          "Floor_No": 0.00019830040327852662,
+          "Nearby_Hospitals": 0.00012377021707121958,
+          "Hospital_Score": 0.0001172413727544744,
+          "Property_Type": 0.00011632682479523986,
+          "School_Density_Score": 0.00011346532097345888,
+          "Facing": 0.0001048391647852774,
+          "Nearby_Schools": 0.00010477002101031727,
+          "Owner_Type": 9.532226672798653e-05,
+          "Furnished_Status": 9.14584167653893e-05,
+          "BHK": 8.979131223701665e-05,
+          "Amenity_Count": 8.809578044965685e-05,
+          "Has_Playground": 4.969063791101164e-05,
+          "Has_Gym": 4.88994325842716e-05,
+          "Security_Flag": 4.50045200823654e-05,
+          "Has_Garden": 4.295224300657152e-05,
+          "Has_Pool": 3.8336597178918105e-05,
+          "Has_Clubhouse": 3.824462987957384e-05,
+          "Parking_Flag": 3.642179834244868e-05
+        },
+        "fit_seconds": 5.2
+      },
+      "XGBoost_d6": {
+        "val": {
+          "rmse": 1.5557390521393717,
+          "mae": 1.1821271860432943,
+          "r2": 0.9999442480835192,
+          "mape_pct": 0.5418999069989677
+        },
+        "test": {
+          "rmse": 1.5757700127325072,
+          "mae": 1.1879963994140623,
+          "r2": 0.9999424611708028,
+          "mape_pct": 0.5242662925995707
+        },
+        "importance": {
+          "Price_in_Lakhs": 0.7327689977418396,
+          "City": 0.2163421367450925,
+          "State": 0.035186364927558444,
+          "Transport_Score": 0.00787746983599835,
+          "Availability_Status": 0.0028168940351204616,
+          "Property_Type": 0.002573720260620519,
+          "Infrastructure_Score": 0.0014989003238201713,
+          "Age_of_Property": 0.0008302738257724475,
+          "Public_Transport_Accessibility": 2.4699829241258554e-05,
+          "Facing": 1.28066351111032e-05,
+          "Owner_Type": 8.639705410415847e-06,
+          "Furnished_Status": 7.631004411063869e-06,
+          "Nearby_Schools": 5.00155455448271e-06,
+          "Nearby_Hospitals": 4.413814078890829e-06,
+          "Size_per_BHK": 3.6346281556502075e-06,
+          "Size_in_SqFt": 3.4888127383944812e-06,
+          "Floor_Ratio": 3.4473172708327314e-06,
+          "Amenity_Count": 3.2697068289359663e-06,
+          "Total_Floors": 3.2651141081578812e-06,
+          "Floor_No": 3.2456743414187376e-06,
+          "Has_Gym": 3.2048525820438024e-06,
+          "Has_Pool": 3.1226390375010382e-06,
+          "Has_Playground": 2.869854994659265e-06,
+          "Parking_Flag": 2.8599517344241295e-06,
+          "BHK": 2.526563497882074e-06,
+          "Security_Flag": 2.4720304240321212e-06,
+          "Has_Garden": 2.465327220840937e-06,
+          "Has_Clubhouse": 2.17728843558203e-06,
+          "School_Density_Score": 0.0,
+          "Hospital_Score": 0.0
+        },
+        "fit_seconds": 4.1
+      },
+      "XGBoost_d8": {
+        "val": {
+          "rmse": 1.6130683394370526,
+          "mae": 1.1971883605316165,
+          "r2": 0.9999400634379589,
+          "mape_pct": 0.5202556521629461
+        },
+        "test": {
+          "rmse": 1.6338189274447872,
+          "mae": 1.2061049203216552,
+          "r2": 0.9999381438047042,
+          "mape_pct": 0.5106144433829353
+        },
+        "importance": {
+          "Price_in_Lakhs": 0.7609165829628409,
+          "City": 0.19312243736362533,
+          "State": 0.031064176313176973,
+          "Transport_Score": 0.007483377511049971,
+          "Property_Type": 0.0028141183698391133,
+          "Availability_Status": 0.0027908135387737097,
+          "Infrastructure_Score": 0.0011221913041199977,
+          "Age_of_Property": 0.0005265756573135086,
+          "Public_Transport_Accessibility": 2.1665111269682287e-05,
+          "Facing": 2.08281651497803e-05,
+          "Owner_Type": 1.5301840748299578e-05,
+          "Furnished_Status": 1.5066238421934803e-05,
+          "Nearby_Hospitals": 6.959421554972886e-06,
+          "Size_per_BHK": 6.627364133233221e-06,
+          "Nearby_Schools": 6.4755990276264345e-06,
+          "Has_Gym": 6.338219854318838e-06,
+          "Floor_Ratio": 6.207382676334656e-06,
+          "Amenity_Count": 5.918991459025694e-06,
+          "Has_Clubhouse": 5.555904352113425e-06,
+          "Has_Pool": 5.549881678259449e-06,
+          "Has_Garden": 5.432070283261771e-06,
+          "Total_Floors": 5.31633071717369e-06,
+          "Has_Playground": 5.185165666352848e-06,
+          "Floor_No": 5.178439498354196e-06,
+          "Security_Flag": 4.88090967837463e-06,
+          "Parking_Flag": 4.518412833517817e-06,
+          "Size_in_SqFt": 4.404954280118616e-06,
+          "BHK": 2.316575977722054e-06,
+          "School_Density_Score": 0.0,
+          "Hospital_Score": 0.0
+        },
+        "fit_seconds": 9.6
+      }
+    },
+    "baseline_fixed_8pct_test": {
+      "rmse": 23.1119555098692,
+      "mae": 16.384275505791503,
+      "r2": 0.9876220494526038,
+      "mape_pct": 4.424905820048126
+    }
+  },
+  "train_seconds": 69.9
+}
